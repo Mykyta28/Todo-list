@@ -1,0 +1,71 @@
+.form-control {
+  margin: 0.5rem 0;
+}
+
+.form-control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font: inherit;
+  line-height: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.form-control input:focus {
+  outline: none;
+  background: #c8e1e4;
+  border-color: #00358b;
+}
+
+.form-control.invalid input {
+  border-color: red;
+  background: rgb(243, 157, 157);
+}
+
+.form-control.invalid label {
+  color: red;
+}
+
+button {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background: #00358b;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  cursor: pointer;
+}
+
+.form-control.invalid span{
+  color: red;
+  font-size: 11px;
+}
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.form-control.invalid input {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.6rem #ff0000;
+}
+
+
+
